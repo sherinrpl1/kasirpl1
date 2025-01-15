@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:kasirsherin/Login.dart'; // Untuk fungsi delay
+import 'package:google_fonts/google_fonts.dart';
+import 'package:kasirsherin/login.dart';
+import 'package:kasirsherin/welcome.dart'; // Untuk fungsi delay
 
 void main() {
   runApp(MyApp());
@@ -34,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // Ganti ke halaman utama setelah 3 detik
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
+        MaterialPageRoute(builder: (context) => WelcomeScreen()),
       );
     });
   }
@@ -42,24 +44,29 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[100], // Warna background splash screen
+      backgroundColor: Colors.white, // Warna background splash screen
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           Image.asset("asset/logo kasir.png",
-           width: 150,
-           height: 150,
+           Image.asset("asset/logo2.png",
+           width: 300,
+           height: 300,
            ),
-            SizedBox(height: 20),
-            Text(
-              'SMARTCELIN APP',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            // Text(
+            //   'SMARTCELIN APP',
+            //   style: GoogleFonts.acme(
+            //     textStyle: TextStyle(color: Colors.blue[900],
+            //     fontSize: 24,
+            //     fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
+            //   // style: TextStyle(
+            //   //   color: Colors.blue[900],
+            //   //   fontSize: 24,
+            //   //   fontWeight: FontWeight.bold,
+            //   // ),
+            // ),
           ],
         ),
       ),

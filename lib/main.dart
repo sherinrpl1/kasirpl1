@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kasirsherin/appsplash.dart';
-import 'package:kasirsherin/Login.dart';
+import 'package:kasirsherin/login.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'chasier',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
